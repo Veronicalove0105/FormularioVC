@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full CSS Drop Down Contact Form</title>
+  <link rel="stylesheet" media="all" href="style.css" />
+</head>
+<body>
+	<div class="sectioncalc">
+		<h4>Pensión Estimada:</h4>
+		<h1 id="Estimada">S/.0.00</h1>
+		<div class="fondoE">
+			<h4 style="margin-left: 15%;">Fondo Estimado:</h4>
+			<h1 id="FondoEs">S/.0.00</h1>
+		</div>
+		<h4>Pensión Estimada:</h4>
+		<h1 id="SaldoD">S/.0.00</h1>
+	</div>
+  <section id="contact">
+    <div class="sectionheader">
+      <h1>CONTACT</h1>
+    </div>
+    <article>
+      <p>AFP PRIMA.</p>
+      <label for="checkcontact" class="contactbutton">
+        <div class="mail"></div>
+      </label>
+      <input id="checkcontact" type="checkbox">
+      <form action="" method="post" class="contactform" id="contactForm">
+        <p class="input_wrapper">
+          <input type="text" name="contact_nom" value="" id="contact_nom" required>
+          <label for="contact_nom">Nombre</label>
+        </p>
+        <p class="input_wrapper">
+          <input type="email" name="contact_email" value="" id="contact_email">
+          <label for="contact_email">Email</label>
+        </p>
+        <p class="input_wrapper">
+          <input type="text" name="contact_sexo" value="" id="contact_sexo">
+          <label for="contact_sexo">Sexo</label>
+        </p>
+        <p class="input_wrapper">
+          <input type="number" name="contact_edad" value="" id="contact_edad" required>
+          <label for="contact_edad">Edad</label>
+        </p>
+        <p class="input_wrapper">
+          <input type="number" name="contact_ingreso" value="" id="contact_ingreso" required>
+          <label for="contact_ingreso">Ingreso Mensual</label>
+        </p>
+        <p class="input_wrapper">
+          <input type="number" name="contact_saldo" value="" id="contact_saldo" required>
+          <label for="contact_saldo">Saldo Actual</label>
+        </p>
+        <p class="textarea_wrapper">
+          <textarea name="contact_message" id="contact_message"></textarea>
+        </p>
+        <p class="submit_wrapper">
+          <input type="submit" value="Calcular">
+        </p>
+        <div id="resultado" class="resultado"></div>
+      </form>
+    </article>
+  </section>
+
+
+<script src="calc.js"></script>
+</body>
+</html>
